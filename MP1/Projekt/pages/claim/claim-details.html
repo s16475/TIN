@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXE TUiR S.A.</title>
+</head>
+<body>
+    <header>
+        <h1>AXE TUiR S.A.</h1>
+        <img src="/images/logo.png" width="100" height="100" alt="AXE TUiR S.A. Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Strona główna</a></li>
+            <li><a href="/pages/employee/employee-list.html">Pracownicy</a></li>
+            <li><a href="/pages/policy/policy-list.html">Polisy</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Szczegóły szkody</h2>
+       
+        <form>
+            <div>
+                <label for="claimDate">Data:</label>
+                <input type="date" name="claimDate" value="2010-12-12" id="claimDate" disabled="true">
+            </div>
+
+            <div>
+                <label for="claimValue">Wartość:</label>
+                <input type="number" name="claimValue" value="2000" id="claimValue" disabled="true">
+            </div>
+
+            <div>
+                <label for="claimCause">Przyczyna:</label>
+                <input type="text" name="claimCause" value="Pożar" id="claimCause" disabled="true">
+            </div>
+        </form>
+
+        <h2>Pracownicy przydzieleni do szkody</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Numer pracownika</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>Przydzielony od</th>
+                    <th>Przydzielony do</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jan</td>
+                    <td>Kowalski</td>
+                    <td>12-12-2009</td>
+                    <td>12-01-2010</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>Anna</td>
+                    <td>Kowalska</td>
+                    <td>05-11-2019</td>
+                    <td>15-01-2020</td>
+                </tr>
+            </tbody>
+           
+        </table>
+
+        <div>
+            <a href="/pages/claim/claim-edit.html">Edytuj</a>  
+            <a href="/pages/claim/claim-list.html">Anuluj</a>  
+        </div>
+        
+    </main>
+
+    <footer>
+        Grzegorz, Piotrowski, S16475
+    </footer> 
+</body>
+</html>
+
