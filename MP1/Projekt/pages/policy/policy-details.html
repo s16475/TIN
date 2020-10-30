@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXE TUiR S.A.</title>
+</head>
+<body>
+    <header>
+        <h1>AXE TUiR S.A.</h1>
+        <img src="/images/logo.png" width="100" height="100" alt="AXE TUiR S.A. Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Strona główna</a></li>
+            <li><a href="/pages/employee/employee-list.html">Pracownicy</a></li>
+            <li><a href="/pages/claim/claim-list.html">Szkody</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Szczegóły polisy</h2>
+       
+        <form>
+            <div>
+                <label for="policyStartDate">Początek ochrony:</label>
+                <input type="date" name="policyStartDate" value="2010-12-12" id="policyStartDate" disabled="true">
+            </div>
+
+            <div>
+                <label for="policyEndDate">Koniec ochrony:</label>
+                <input type="date" name="policyEndDate" value="2011-12-11" id="policyEndDate" disabled="true">
+            </div>
+
+            <div>
+                <label for="sumInsured">Suma ubezpieczenia:</label>
+                <input type="number" name="sumInsured" value="50000" id="sumInsured" disabled="true">
+            </div>
+
+            <div>
+                <label for="insurerNumber">Email:</label>
+                <input type="number" name="insurerNumber" value="1" id="insurerNumber" disabled="true">
+            </div>
+        </form>
+
+        <h2>Szkody na wybranej polisie</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Numer szkody</th>
+                    <th>Data</th>
+                    <th>Wartość</th>
+                    <th>Przyczyna</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>12-12-2010</td>
+                    <td>2000</td>
+                    <td>Pożar</td>
+                </tr>
+            </tbody>
+
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td>13-11-2021</td>
+                    <td>3000</td>
+                    <td>Kradzież z włamaniem</td>
+                </tr>
+            </tbody>
+           
+        </table>
+
+        <div>
+            <a href="/pages/policy/policy-list.html">Anuluj</a>  
+        </div>
+        
+    </main>
+
+    <footer>
+        Grzegorz, Piotrowski, S16475
+    </footer> 
+</body>
+</html>
+
