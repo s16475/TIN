@@ -14,33 +14,34 @@
     <nav>
         <ul>
             <li><a href="/index.html">Strona główna</a></li>
-            <li><a href="/pages/claim/claim-list.html">Szkody</a></li>
+            <li><a href="/pages/employee/employee-list.html">Pracownicy</a></li>
             <li><a href="/pages/policy/policy-list.html">Polisy</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Edytuj pracownika</h2>
+        <h2>Edytuj szkodę</h2>
 
         <form>
+            
             <div>
-                <label for="empName">Imię:</label>
-                  <input type="text" name="empName" value="Jan" id="empName">
+                <label for="claimDate">Data:</label>
+                <input type="date" name="claimDate" value="2010-12-12" id="claimDate">
             </div>
-    
+
             <div>
-                <label for="empSurname">Nazwisko:</label>
-                <input type="text" name="empSurname" value="Kowalski" id="empSurname">
+                <label for="claimValue">Wartość:</label>
+                <input type="number" name="claimValue" value="2000" id="claimValue">
             </div>
-    
+
             <div>
-                <label for="empEmail">Email:</label>
-                <input type="email" name="empEmail" value="jan.kowalski@axe.com" id="empEmail">
+                <label for="claimCause">Przyczyna:</label>
+                <input type="text" name="claimCause" value="Pożar" id="claimCause">
             </div>
 
             <div>
                 <input type="submit" value="Zmodyfikuj" />
-                <a href="/pages/employee/employee-list.html">Anuluj</a>
+                <a href="/pages/employee/claim-list.html">Anuluj</a>
             </div>
         </form>
     </main>
