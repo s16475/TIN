@@ -118,17 +118,14 @@ main h2 {
 
 .list-actions-button-details,
 .list-actions-button-edit,
-.list-actions-button-delete {
+.list-actions-button-delete,
+.button-add,
+.button-assign,
+.button-cancel,
+.button-edit {
     display: inline-block;
     width: 75px;
     padding: 0.25rem 0.5rem;
-}
-
-.list-actions-button-details,
-.list-actions-button-edit,
-.list-actions-button-delete
-.button-add
-.button-assign {
     border: none;
     border-radius: 5px;
     color: white;
@@ -166,10 +163,6 @@ main h2 {
 }
 
 .button-add {
-    padding: 0.5rem 1rem;
-}
-
-.button-add {
     background-color: #27ae60;
 }
 
@@ -178,14 +171,62 @@ main h2 {
 }
 
 .button-assign {
-    padding: 0.5rem 1rem;
-}
-
-.button-assign {
     background-color: #d4b817;
 }
 
 .button-assign:hover {
     background-color: #d4b817;
+}
+
+.button-cancel {
+    background-color: #8791bd;
+}
+
+.button-cancel:hover {
+    background-color: #8791bd;
+}
+
+.button-edit {
+    background-color: #d4b712;
+}
+
+.button-edit:hover {
+    background-color: #d4b712;
+}
+
+button, 
+input, 
+select, 
+textarea { 
+    font-family: inherit; 
+    font-size: 100%; 
+    box-sizing: border-box; 
+    padding: 0; margin: 0; 
+} 
+
+textarea { 
+    overflow: auto; 
+}
+
+.form {
+    margin-left: 2rem;
+    width: 300px;
+}
+
+.form select, 
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="email"] {
+    border: 1px solid #7f8c8d;
+    color:#2c3e50;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5em;
 }
 
