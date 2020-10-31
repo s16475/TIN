@@ -24,11 +24,46 @@
     <main>
         <h2>Przydziel szkodę do pracownika</h2>
 
-        <p>Tu ma byc dropdown menu z wyborem pracownika</p>
-        <p>Ponizej dropdown ma byc form z wybranym pracownikiem</p>
+        <div class="dropdown-menu">
+            <button class="menu-btn">Open <</button>
+            <div class="menu-content">
+            <a class="links" href="#">Contact Us</a>
+            <a class="links" href="#">Visit Us</a>
+            <a class="links" href="#">About Us</a>
+            </div>
+            </div>
+            <script>
+            let dropdownBtn = document.querySelector('.menu-btn');
+            let menuContent = document.querySelector('.menu-content');
+            dropdownBtn.addEventListener('click',()=>{
+               if(menuContent.style.display===""){
+                  menuContent.style.display="block";
+               } else {
+                  menuContent.style.display="";
+               }
+            })
+            </script>
+
+
+        <form class="form">
+            <div>
+                <label for="empName">Imię:</label>
+                <input type="text" name="empName" id="empName">
+            </div>
+
+            <div>
+                <label for="empSurname">Nazwisko:</label>
+                <input type="text" name="empSurname" id="empSurname">
+            </div>
+
+            <div>
+                <label for="empEmail">Email:</label>
+                <input type="email" name="empEmail" id="empEmail">
+            </div>
+        </form>
 
         <div>
-            <input type="submit" value="Dodaj" class="button-edit" />
+            <input type="submit" value="Przydziel" class="button-edit" />
             <a href="claim-list.html" class="button-cancel">Anuluj</a>    
         </div> 
         
