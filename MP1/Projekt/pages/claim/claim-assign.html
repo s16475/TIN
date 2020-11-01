@@ -22,29 +22,18 @@
     </nav>
 
     <main>
-        <h2>Przydziel szkodę do pracownika</h2>
+        <h2>Przydziel tą szkodę do pracownika</h2>
 
-        <div class="dropdown-menu">
-            <button class="menu-btn">Open <</button>
-            <div class="menu-content">
-            <a class="links" href="#">Contact Us</a>
-            <a class="links" href="#">Visit Us</a>
-            <a class="links" href="#">About Us</a>
-            </div>
-            </div>
-            <script>
-            let dropdownBtn = document.querySelector('.menu-btn');
-            let menuContent = document.querySelector('.menu-content');
-            dropdownBtn.addEventListener('click',()=>{
-               if(menuContent.style.display===""){
-                  menuContent.style.display="block";
-               } else {
-                  menuContent.style.display="";
-               }
-            })
-            </script>
-
-
+              <div class="select">
+                <select>
+                  <option>--wybierz pracownika--</option>
+                  <option>Jan Kowalski</option>
+                  <option>Marian Pazdzioch</option>
+                  <option>Anna Kowalska</option>
+                </select>
+                <div class="select-arrow"></div>
+              </div>
+             
         <form class="form">
             <div>
                 <label for="empName">Imię:</label>

@@ -22,13 +22,39 @@
     </nav>
 
     <main>
-        <h2>Przydziel pracownika do szkody</h2>
+        <h2>Przydziel tego pracownika do szkody</h2>
 
-        <p>Tu ma byc dropdown menu z wyborem szkody</p>
-        <p>Ponizej dropdown ma byc form z wybrana szkoda</p>
+        <div class="select">
+            <select>
+              <option>--wybierz szkodę--</option>
+              <option>Szkoda nr. 1</option>
+              <option>Szkoda nr. 2</option>
+              <option>Szkoda nr. 3</option>
+            </select>
+            <div class="select-arrow"></div>
+          </div>
+
+          <form class="form">
+            
+            <div>
+                <label for="claimDate">Data:</label>
+                <input type="date" name="claimDate" id="claimDate">
+            </div>
+
+            <div>
+                <label for="claimValue">Wartość:</label>
+                <input type="number" name="claimValue" id="claimValue">
+            </div>
+
+            <div>
+                <label for="claimCause">Przyczyna:</label>
+                <input type="text" name="claimCause" id="claimCause">
+            </div>
+
+        </form>
 
         <div>
-            <input type="submit" value="Dodaj" class="button-add" />
+            <input type="submit" value="Przydziel" class="button-edit" />
             <a href="employee-list.html" class="button-cancel">Anuluj</a>    
         </div> 
         
