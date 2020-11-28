@@ -38,21 +38,22 @@
         <form class="form">
             
             <label for="claimDate">Data:</label>
-            <input type="date" name="claimDate" id="claimDate">
-
+            <input type="date" name="claimDate" id="claimDate" disabled="true">
+            <span></span>
+            
             <label for="claimValue">Wartość:</label>
-            <input type="number" name="claimValue" id="claimValue">
-
+            <input type="number" name="claimValue" id="claimValue" disabled="true">
+            <span></span>
+            
             <label for="claimCause">Przyczyna:</label>
-            <input type="text" name="claimCause" id="claimCause">
+            <input type="text" name="claimCause" id="claimCause" disabled="true">
+            <span></span>
 
+            <div class="form-buttons">
+                <input type="submit" value="Przydziel" class="form-button-edit" />
+                <a href="/pages/employee-list.html" class="form-button-cancel">Anuluj</a>    
+            </div> 
         </form>
-
-        <div>
-            <input type="submit" value="Przydziel" class="button-edit" />
-            <a href="/pages/employee-list.html" class="button-cancel">Anuluj</a>    
-        </div> 
-        
 
     </main>
 

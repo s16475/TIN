@@ -167,8 +167,8 @@ main h2 {
     background-color: #27ae60;
 }
 
-    .button-add:hover {
-        background-color: #2ecc71;
+.button-add:hover {
+    background-color: #2ecc71;
 }
 
 button,
@@ -184,6 +184,11 @@ textarea {
 
 textarea {
     overflow: auto;
+}
+
+.select {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .form {
@@ -211,6 +216,7 @@ textarea {
     margin-bottom: 1rem;
 }
 
+.errors-text,
 abbr[title='required'] {
     color: #c0392b;
 }
@@ -275,12 +281,20 @@ abbr[title='required'] {
 
 .form {
     display: grid;
-    grid-template-columns: 150px 300px;
+    grid-template-columns: 150px 300px 1fr;
     row-gap: 1rem;
+    column-gap: 1rem;
 }
 
-.form-buttons {
-    grid-column-end: -1;
+.errors-text {
+    font-size: 0.85em;
+    line-height: 2.25rem;
+    white-space: nowrap;
+}
+
+.form input.error-input,
+.form select.error-input {
+    border: 3px solid #e74c3c
 }
 
 @media all and (max-width: 720px) {
@@ -348,31 +362,12 @@ body {
         row-gap: unset;
         margin-left: unset;
     }
-}
 
-.errors-text {
-    font-size: 0.85em;
-    line-height: 2.25rem;
-}
+    .form .errors-text {
+        margin-bottom: 1rem;
+    }
 
-.form input.error-input,
-.form select.error-input {
-    border: 3px solid #e74c3c
-}
-
-.form {
-    grid-template-columns: 150px 300px 1fr;
-    column-gap: 1rem;
-}
-
-.form-buttons {
-    grid-column: 1 / span 2;
-}
-
-.form .errors-text {
-    margin-bottom: 1rem;
-}
-
-.form-buttons {
-    grid-column: 1 / span 1; 
+    .form-buttons {
+        grid-column: 1 / span 1; 
+    }
 }
