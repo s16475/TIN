@@ -26,7 +26,7 @@
     <main>
         <h2>Edytuj pracownika</h2>
 
-        <form class="form" novalidate onsubmit="return validateForm();">
+        <form class="form_edit" novalidate onsubmit="return validateForm();">
             <label for="empName">Imię:</label>
             <input type="text" name="empName" id="empName" placeholder="2-60 znaków"/>
             <span id="errorFistName" class="errors-text"></span>
@@ -43,9 +43,6 @@
         <div>
             <p id="errorSummary" class="errors-text"></p>
             <input type="submit" value="Zmodyfikuj" class="button-edit" />
-            
-            
-            
             <a href="/pages/employee/employee-list.html" class="button-cancel">Anuluj</a>
         </div>
 

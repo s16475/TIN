@@ -229,6 +229,40 @@ textarea {
     display: block;
     margin-bottom: 0.5rem;
 }
+
+.form_edit {
+    display: grid;
+    grid-template-columns: 150px 300px 1f;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.form_edit select, 
+.form_edit input[type="text"],
+.form_edit input[type="number"],
+.form_edit input[type="date"],
+.form_edit input[type="email"] {
+    border: 1px solid #7f8c8d;
+    color:#2c3e50;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form_edit label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.errors-text {
+    font-size: 0.85em;    
+    line-height: 2.25rem;
+}
+
+.form input.error-input,
+.form select.error-input {
+  border: 3px solid #e74c3c
+} 
       
 select {
     margin-bottom: 2rem;
