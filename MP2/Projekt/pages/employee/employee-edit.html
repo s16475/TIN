@@ -6,6 +6,7 @@
     <title>AXE TUiR S.A.</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script type="application/javascript" src="/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/js/validationEmpForm.js"></script>
 </head>
 <body>
     <header>
@@ -25,8 +26,7 @@
     <main>
         <h2>Edytuj pracownika</h2>
 
-        <form class="form">
-            
+        <form class="form" novalidate onsubmit="return validateForm();">
             <label for="empName">Imię:</label>
             <input type="text" name="empName" id="empName" placeholder="2-60 znaków"/>
             <span id="errorFistName" class="errors-text"></span>
@@ -37,13 +37,15 @@
     
             <label for="empEmail">Email:</label>
             <input type="email" name="empEmail" id="empEmail" placeholder="np. nazwa@domena.pl">
-            <span id="errorEmail" class="errors-text"></span>
-
-        </form>
+            <span id="errorEmail" class="errors-text"></span>   
+        </form>     
 
         <div>
             <p id="errorSummary" class="errors-text"></p>
             <input type="submit" value="Zmodyfikuj" class="button-edit" />
+            
+            
+            
             <a href="/pages/employee/employee-list.html" class="button-cancel">Anuluj</a>
         </div>
 
