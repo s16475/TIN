@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>AXE TUiR S.A.</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script type="application/javascript" src="/js/validationCommon.js"></script>
 </head>
 <body>
     <header>
@@ -15,36 +16,36 @@
     <nav>
         <ul>
             <li><a href="/index.html">Strona główna</a></li>
-            <li><a href="/pages/employee/employee-list.html">Pracownicy</a></li>
-            <li><a href="/pages/claim/claim-list.html" class="active">Szkody</a></li>
-            <li><a href="/pages/policy/policy-list.html">Polisy</a></li>
+            <li><a href="/pages/employee-list.html" class="active">Pracownicy</a></li>
+            <li><a href="/pages/claim-list.html">Szkody</a></li>
+            <li><a href="/pages/policy-list.html">Polisy</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Lista szkód</h2>
+        <h2>Lista pracowników</h2>
         <table class="table-list">
             <thead>
                 <tr>
-                    <th>Data</th>
-                    <th>Wartość</th>
-                    <th>Przyczyna</th>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>E-mail</th>
                     <th>Akcje</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
-                    <td>12-12-2010</td>
-                    <td>2000</td>
-                    <td>Pożar</td>
+                    <td>Jan</td>
+                    <td>Kowalski</td>
+                    <td>jan.kowalski@axe.com</td>
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/claim/claim-details.html" class="list-actions-button-details">Szczegóły</a>
+                                <a href="/pages/employee-details.html" class="list-actions-button-details">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="/pages/claim/claim-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                <a href="/pages/employee-edit.html" class="list-actions-button-edit">Edytuj</a>
                             </li>
                             <li>
                                 <a href="" class="list-actions-button-delete">Usuń</a>
@@ -56,16 +57,16 @@
 
             <tbody>
                 <tr>
-                    <td>13-11-2021</td>
-                    <td>3000</td>
-                    <td>Kradzież z włamaniem</td>
+                    <td>Marian</td>
+                    <td>Pazdzioch</td>
+                    <td>marian.pazdzioch@axe.com</td>
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/claim/claim-details.html" class="list-actions-button-details">Szczegóły</a>
+                                <a href="/pages/employee-details.html" class="list-actions-button-details">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="/pages/claim/claim-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                <a href="/pages/employee-edit.html" class="list-actions-button-edit">Edytuj</a>
                             </li>
                             <li>
                                 <a href="" class="list-actions-button-delete">Usuń</a>
@@ -77,16 +78,16 @@
 
             <tbody>
                 <tr>
-                    <td>01-01-2010</td>
-                    <td>4000</td>
-                    <td>Powódź</td>
+                    <td>Anna</td>
+                    <td>Kowalska</td>
+                    <td>ania.kowalska@axe.com</td>
                     <td>
                         <ul class="list-actions">
                             <li>
-                                <a href="/pages/claim/claim-details.html" class="list-actions-button-details">Szczegóły</a>
+                                <a href="/pages/employee-details.html" class="list-actions-button-details">Szczegóły</a>
                             </li>
                             <li>
-                                <a href="/pages/claim/claim-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                <a href="/pages/employee-edit.html" class="list-actions-button-edit">Edytuj</a>
                             </li>
                             <li>
                                 <a href="" class="list-actions-button-delete">Usuń</a>
@@ -97,8 +98,7 @@
             </tbody>            
         </table>
 
-        <p><a href="/pages/claim/claim-assign.html" class="button-assign">Przydziel szkodę do pracownika</a></p>
-        <p><a href="/pages/claim/claim-add.html" class="button-add">Dodaj nową szkodę</a></p>
+        <p><a href="/pages/employee-assign.html" class="button-assign">Przydziel pracownika do szkody</a></p>
 
     </main>
 
@@ -107,3 +107,4 @@
     </footer> 
 </body>
 </html>
+
