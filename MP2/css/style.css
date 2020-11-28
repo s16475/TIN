@@ -230,6 +230,7 @@ abbr[title='required'] {
 .list-actions-button-delete,
 .button-add,
 .form-button-submit,
+.form-button-assign,
 .form-button-cancel {
     border: none;
     border-radius: 5px;
@@ -241,16 +242,19 @@ abbr[title='required'] {
 
 .button-add,
 .form-button-submit,
+.form-button-assign,
 .form-button-cancel {
     padding: 0.5rem 1rem;
 }
 
 .button-add,
+.form-button-assign,
 .form-button-submit {
     background-color: #27ae60;
 }
 
 .button-add:hover,
+.form-button-assign:hover,
 .form-button-submit:hover {
     background-color: #2ecc71;
 }
@@ -266,16 +270,19 @@ abbr[title='required'] {
 }
 
 .form-button-submit,
+.form-button-assign,
 .form-button-cancel {
     width: 100%;
 }
 
-.form-button-cancel {
+.form-button-cancel,
+.form-button-assign {
     box-sizing: border-box;
     display: block;
 }
 
-.form-button-submit {
+.form-button-submit,
+.form-button-assign {
     margin-bottom: 0.5rem;
 }
 
