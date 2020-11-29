@@ -70,6 +70,20 @@ function checkNumberRange(value, min, max) {
     return true;
 }
 
+function checkIfNumberPositive(value) {
+    if (!value) {
+        return false;
+    }
+    if (isNaN(value)) {
+        return false;
+    }
+    value = parseFloat(value);
+    if (value <= 0) {
+        return false;
+    }
+    return true;
+}
+
 function checkDate(value) {
     if (!value) {
         return false;

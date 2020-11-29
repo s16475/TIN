@@ -6,6 +6,7 @@
     <title>AXE TUiR S.A.</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script type="application/javascript" src="/js/validationCommon.js"></script>
+    <script type="application/javascript" src="/js/validationClaimForm.js"></script>
 </head>
 <body>
     <header>
@@ -25,30 +26,30 @@
     <main>
         <h2>Edytuj szkodę</h2>
 
-        <form class="form">
+        <form class="form" novalidate onsubmit="return validateForm();">
             
-            <label for="claimNumber">Number:</label>
-            <input type="number" name="claimNumber" value="1" id="claimNumber" disabled="true">
+            <label for="claimNumber">Numer:</label>
+            <input type="number" name="claimNumber" value="1" id="claimNumber" disabled="true"/>
             <span></span>
+
+            <label for="claimDate">Data:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="date" name="claimDate" id="claimDate" placeholder="yyyy-mm-dd"/>
+            <span id="errorClaimDate" class="errors-text"></span>
+
+            <label for="claimValue">Wartość:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="number" name="claimValue" id="claimValue" placeholder="liczba > 0"/>
+            <span id="errorClaimValue" class="errors-text"></span>
+
+            <label for="claimCause">Przyczyna:<abbr title="required" aria-label="required">*</abbr></label>
+            <input type="text" name="claimCause" id="claimCause" placeholder="2-60 znaków"/>
+            <span id="errorClaimCause" class="errors-text"></span>
             
-            <label for="claimDate">Data:</label>
-            <input type="date" name="claimDate" value="2010-12-12" id="claimDate">
-            <span></span>
-
-            <label for="claimValue">Wartość:</label>
-            <input type="number" name="claimValue" value="2000" id="claimValue">
-            <span></span>
-
-            <label for="claimCause">Przyczyna:</label>
-            <input type="text" name="claimCause" value="Pożar" id="claimCause">
-            <span></span>
-
             <div class="form-buttons">
-                <input type="submit" value="Zmodyfikuj" class="form-button-submit" />
+                <p id="errorsSummary" class="errors-text"></p>
+                <input type="submit" class="form-button-submit" value="Zmodyfikuj" />
                 <a href="/pages/claim-list.html" class="form-button-cancel">Anuluj</a>
             </div>
-        
-        
+
         </form>
  
     </main>
